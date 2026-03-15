@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7EBFF"
+    android:paddingTop="48dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="-24dp"
+            android:layout_marginBottom="16dp"
+            android:background="#87B4F5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/parent"
+                android:layout_marginTop="12dp"
+                android:contentDescription="Parent Icon" />
+
+            <TextView
+                android:id="@+id/greetingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Parent Dashboard"
+                android:textColor="#243B86"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_menu"
+                android:contentDescription="Menu Icon" />
+        </LinearLayout>
+
+        <!-- Search bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/search_background"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                android:contentDescription="Search" />
+
+            <EditText
+                android:id="@+id/searchStudent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search"
+                android:background="@android:color/transparent"
+                android:paddingStart="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+        </LinearLayout>
+
+        <!-- Greeting -->
+        <TextView
+            android:id="@+id/greetingStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, Username"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="2dp" />
+
+        <!-- Bus Location Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_light_purple"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Bus Location Title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bus Location"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Live"
+                    android:textColor="#0000FF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Map Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:padding="4dp"
+                android:elevation="2dp">
+
+                <org.osmdroid.views.MapView
+                    android:id="@+id/osmMapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <!-- Bus Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/busNumberText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bus number"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/etaText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ETA: time"
+                    android:textColor="#0000FF" />
+            </LinearLayout>
+
+            <!-- Pick up time -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick up time"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/pickupTimeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:gravity="end"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Driver Info Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_light_purple"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp">
+
+            <!-- Route -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/route"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Route :"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/routeText"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Route"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Driver Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/contact"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver name :"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/driverNameText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <!-- Driver Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_call"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Ph :"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/driverPhoneText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phone"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="end" />
+
+                <ImageView
+                    android:id="@+id/callIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/call_green"
+                    android:contentDescription="Call Icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

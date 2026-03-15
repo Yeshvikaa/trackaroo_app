@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen"
+    android:gravity="center">
+
+    <!-- Transparent overlay for readability -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Main Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        android:background="@drawable/subscription_card_bg"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:gravity="center">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trackaroo Premium"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4B0082"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your plan and unlock all features!"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"/>
+
+        <!-- Radio Buttons -->
+        <RadioGroup
+            android:id="@+id/planGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/planMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Plan - ₹20"
+                android:textSize="16sp"
+                android:checked="true"
+                android:textColor="#222222"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/planYearly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yearly Plan - ₹100"
+                android:textSize="16sp"
+                android:textColor="#222222"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/planLifetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lifetime Plan - ₹500"
+                android:textSize="16sp"
+                android:textColor="#222222"/>
+        </RadioGroup>
+
+        <!-- Subscribe Button -->
+        <Button
+            android:id="@+id/btnSubscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subscribe Now"
+            android:backgroundTint="#6C3CE6"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"/>
+
+        <!-- Note -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel anytime. Instant activation."
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

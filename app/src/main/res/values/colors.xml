@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightblue">#87A7F9</color>
+
+        <!-- Primary colors -->
+    <color name="primary">#1E3A8A</color>        <!-- Deep blue -->
+    <color name="accent">#307FE2</color>        <!-- Bright blue -->
+    <color name="background">#D8E8FB</color>    <!-- Light blue background -->
+
+        <!-- Strong Text Colors -->
+    <color name="text_primary">#000000</color>         <!-- Black -->
+    <color name="text_secondary">#333333</color>       <!-- Dark Gray -->
+    <color name="text_muted">#555555</color>           <!-- Medium Gray -->
+    <color name="background_text">#666666</color>
+    <color name="green_text">#388E3C</color>
+    <!-- Input background -->
+    <color name="input_bg">#EEEEEE</color>
+
+        <!-- Button -->
+    <color name="button_blue">#7B9EFF</color>          <!-- Custom blue button -->
+    <color name="green">#4CAF50</color>
+
+</resources>

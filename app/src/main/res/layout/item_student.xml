@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_box"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- Student Title -->
+    <TextView
+        android:id="@+id/tvStudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student 1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Row: Left (Info), Right (Grade + Delete) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Left: ID + Route -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Student ID -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/license_no"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvStudentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student name"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Route -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/route"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvRouteNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Route no"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Right: Grade + Delete -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Grade -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/grade"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grade"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Delete -->
+            <ImageView
+                android:id="@+id/btnDeleteStudent"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="Delete Student" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="#CBB2FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Top Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/routeTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Route R1   Bus no:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <!-- Edit Button -->
+            <ImageView
+                android:id="@+id/editIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit"
+                android:contentDescription="Edit" />
+        </LinearLayout>
+
+        <!-- Marker Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="6dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/marker"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/routeDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup → Drop"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Clock Row (with Delete Button on right) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/clock"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="08:30 AM"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <!-- Delete Button -->
+            <ImageView
+                android:id="@+id/deleteIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="Delete" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

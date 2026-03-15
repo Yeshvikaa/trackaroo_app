@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D1E8FF"
+    android:padding="16dp">
+
+    <!-- Back and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Driver Management"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#243B86"
+            android:paddingBottom="4dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Search bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/search_background"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search"
+            android:contentDescription="Search" />
+
+        <EditText
+            android:id="@+id/searchDriver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search"
+            android:background="@android:color/transparent"
+            android:paddingStart="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+    </LinearLayout>
+
+    <!-- RecyclerView for dynamic driver cards -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/driversRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+</LinearLayout>

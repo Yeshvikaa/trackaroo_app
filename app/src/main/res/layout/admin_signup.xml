@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E8FB"
+    android:padding="24dp"
+    android:paddingTop="48dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Logo and App Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bus_logo"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/bus_logo" />
+
+            <TextView
+                android:id="@+id/appNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="TRACKAROO"
+                android:textColor="#000000"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Slogan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="Tracking of your child during traveling\nin School Bus"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <!-- Card Container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FFFFFF"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Signup"
+                    android:textColor="#1E3A8A"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Login Line -->
+                <TextView
+                    android:id="@+id/loginText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/admin_login_text"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <!-- Admin ID -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admin ID"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/adminId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EEEEEE"
+                    android:hint="Enter your ID"
+                    android:padding="10dp"
+                    android:textColorHint="@color/background_text"
+                    android:textSize="14sp" />
+
+                <!-- Phone Number -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/adminPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EEEEEE"
+                    android:hint="Enter your phone number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColorHint="@color/background_text"
+                    android:textSize="14sp" />
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/adminEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EEEEEE"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColorHint="@color/background_text"
+                    android:textSize="14sp" />
+
+                <!-- Create password (LABEL + INPUT) -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create password"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/adminPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EEEEEE"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColorHint="@color/background_text"
+                    android:textSize="14sp" />
+
+                <!-- Confirm password -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Password"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/adminConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#EEEEEE"
+                    android:hint="Re-enter the password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColorHint="@color/background_text"
+                    android:textSize="14sp" />
+
+                <!-- Confirm Button -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/signupButton"
+                    android:layout_width="160dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_button"
+                    android:text="Confirm"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

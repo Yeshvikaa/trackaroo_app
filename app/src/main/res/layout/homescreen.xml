@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fullscreen Background Image -->
+    <ImageView
+        android:id="@+id/home_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/homescreen"
+        android:contentDescription="Home Screen Background" />
+
+    <!-- Foreground Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="36dp"
+        android:paddingBottom="24dp"
+        android:paddingHorizontal="24dp">
+
+        <!-- App Logo -->
+
+        <!-- Track Button -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="234dp"
+            android:layout_height="208dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/applogo" />
+
+        <Button
+            android:id="@+id/track_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Your Child"
+            android:backgroundTint="#80BFFF"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp" />
+
+        <!-- Sign Up Inline Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/signup_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New User? "
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/signup_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="#1E40AF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

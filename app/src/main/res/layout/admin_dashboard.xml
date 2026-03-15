@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7EBFF"
+    android:paddingTop="48dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="-24dp"
+            android:layout_marginBottom="16dp"
+            android:background="#87B4F5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="Admin Icon"
+                android:src="@drawable/admin" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Admin Dashboard"
+                android:textColor="#243B86"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/menubutton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Menu Icon"
+                android:src="@drawable/ic_menu" />
+        </LinearLayout>
+
+        <!-- Grid Cards Section -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- Buses -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_box"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:layout_gravity="fill">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/buses" />
+
+                <TextView
+                    android:id="@+id/buses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buses"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active Buses"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Students -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_box"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:layout_gravity="fill">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/students" />
+
+                <TextView
+                    android:id="@+id/students"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="Students"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Students"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Routes -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_box"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:layout_gravity="fill">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/routes" />
+
+                <TextView
+                    android:id="@+id/routes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Routes"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="On Route"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Drivers -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_box"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:layout_gravity="fill">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/drivers" />
+
+                <TextView
+                    android:id="@+id/drivers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drivers"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Drivers"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Navigation Buttons (Aligned) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <!-- Manage Routes -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/manageRoutesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="start"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_button_2"
+                android:drawableStart="@drawable/manage_routes"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="  Manage routes"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <!-- Driver Management -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/driverManagementBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="start"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_button_2"
+                android:drawableStart="@drawable/driver_management"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="   Driver management"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <!-- Student Database -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/studentDbBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="start"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_button_2"
+                android:drawableStart="@drawable/student_db"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text=" Student database"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <!-- Emergency -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/emergencyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="start"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_button_2"
+                android:drawableStart="@drawable/emergency_button"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingStart="4dp"
+                android:text=" Emergency"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

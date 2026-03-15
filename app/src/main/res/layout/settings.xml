@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7EBFF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_back"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Settings"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#243B86"
+                android:paddingBottom="4dp" />
+
+        </LinearLayout>
+
+        <!-- Buttons with Black Divider Below Each -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/updateProfileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update profile"
+            android:background="@drawable/rounded_light_purple"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notificationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:background="@drawable/rounded_light_purple"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/privacyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy"
+            android:background="@drawable/rounded_light_purple"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/helpSupportBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help and Support"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_light_purple"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logoutbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_light_purple"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#000000" />
+    </LinearLayout>
+</ScrollView>

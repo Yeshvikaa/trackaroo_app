@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7EBFF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_back"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Edit Routes"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#243B86"
+                android:paddingBottom="4dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333333"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Route Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route number"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <!-- Route -->
+        <EditText
+            android:id="@+id/routeNumberEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:layout_marginTop="6dp"
+            android:hint="Enter the route number"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/routePathEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Enter the route"
+            android:layout_marginTop="6dp"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/routeTimeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Enter the timings"
+            android:layout_marginTop="6dp"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Bus Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus number"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/busNumberEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Enter the bus number"
+            android:layout_marginTop="6dp"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:backgroundTint="#7191D6"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:backgroundTint="#7191D6"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/rounded_button" />
+        </LinearLayout>
+            </LinearLayout>
+</ScrollView>

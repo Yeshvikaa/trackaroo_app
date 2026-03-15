@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6E1F5">
+
+    <!-- Back button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_back" />
+
+    <!-- Scanner box (Camera Preview) -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/scannerBox"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="#FFF0F0"
+        android:clipToOutline="true"
+        android:elevation="4dp"/>
+
+    <!-- Overlay for scan feedback -->
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:clipToOutline="true"/>
+
+    <!-- Scan line (animated red line inside scanner box) -->
+    <View
+        android:id="@+id/scanLine"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#FF0000"/>
+
+    <!-- OCR result text -->
+    <TextView
+        android:id="@+id/ocrResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scannerBox"
+        android:text="Scanning..."
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Corner indicators -->
+    <View
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_centerInParent="true"
+        android:translationX="-115dp"
+        android:translationY="-115dp"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:background="#000"
+        android:layout_centerInParent="true"
+        android:translationX="-115dp"
+        android:translationY="-115dp"/>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_centerInParent="true"
+        android:translationX="115dp"
+        android:translationY="-115dp"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:background="#000"
+        android:layout_centerInParent="true"
+        android:translationX="115dp"
+        android:translationY="-115dp"/>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_centerInParent="true"
+        android:translationX="-115dp"
+        android:translationY="115dp"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:background="#000"
+        android:layout_centerInParent="true"
+        android:translationX="-115dp"
+        android:translationY="115dp"/>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_centerInParent="true"
+        android:translationX="115dp"
+        android:translationY="115dp"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:background="#000"
+        android:layout_centerInParent="true"
+        android:translationX="115dp"
+        android:translationY="115dp"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Trackaroo</string>
+    <string name="login_text">Already a member? <font color='#307FE2'>login</font></string>
+    <string name="driver_login_text">Already a member? <font color='#307FE2'>login</font></string>
+    <string name="parent_login_text">Already a member? <font color='#307FE2'>login</font></string>
+    <string name="admin_login_text">Already a member? <font color='#307FE2'>login</font></string>
+</resources>

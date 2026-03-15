@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "94808670207",
+    "project_id": "trackaroo-a6ce3",
+    "storage_bucket": "trackaroo-a6ce3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94808670207:android:8a1b44aa3f618612c731ca",
+        "android_client_info": {
+          "package_name": "com.simats.trackaroo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC63RignAwpBz5nWw1PGVh-G3FT6z8sC3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/rounded_box"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvRouteNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Route : R101"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvDriverNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9876543210"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/btnCallDriver"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/call_green"
+            android:contentDescription="Call Icon" />
+    </LinearLayout>
+</LinearLayout>

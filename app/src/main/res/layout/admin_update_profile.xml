@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E8FB"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="48dp">
+
+        <!-- Logo and App Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/bus_logo"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRACKAROO"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-black" />
+        </LinearLayout>
+
+        <!-- Slogan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracking of your child during traveling\nin School Bus"
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Card Container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Update"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E3A8A"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Student ID -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admin ID"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/adminid"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your ID"
+                    android:background="#EEEEEE"
+                    android:textColorHint="@color/background_text"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Name -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/adminemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your email"
+                    android:textColorHint="@color/background_text"
+                    android:background="#EEEEEE"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Age -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/adminphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your phone number"
+                    android:textColorHint="@color/background_text"
+                    android:inputType="number"
+                    android:background="#EEEEEE"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="120dp"
+                        android:layout_height="42dp"
+                        android:text="Save"
+                        android:backgroundTint="#6A8DFF"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="12dp" />
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="120dp"
+                        android:layout_height="42dp"
+                        android:text="Cancel"
+                        android:backgroundTint="#6A8DFF"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

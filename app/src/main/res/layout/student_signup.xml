@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E8FB"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="48dp">
+
+        <!-- Logo and App Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:id="@+id/bus_logo"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/bus_logo"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Logo" />
+
+            <TextView
+                android:id="@+id/appNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRACKAROO"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-black" />
+        </LinearLayout>
+
+        <!-- Slogan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracking of your child during traveling\nin School Bus"
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Card Container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Signup"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E3A8A"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Login Line -->
+                <TextView
+                    android:id="@+id/loginText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_text"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center" />
+
+                <!-- Student ID -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student ID"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/studentId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your ID"
+                    android:background="#EEEEEE"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/background_text"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Name -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/studentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your name"
+                    android:background="#EEEEEE"
+                    android:padding="10dp"
+                    android:textColorHint="@color/background_text"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Age -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/studentAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your age"
+                    android:inputType="number"
+                    android:background="#EEEEEE"
+                    android:textColorHint="@color/background_text"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Grade -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grade"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/studentGrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your class and section"
+                    android:textColorHint="@color/background_text"
+                    android:background="#EEEEEE"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- School -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="School"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/studentSchool"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your school name"
+                    android:textColorHint="@color/background_text"
+                    android:background="#EEEEEE"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Address -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+                <EditText
+                    android:id="@+id/studentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter your address"
+                    android:textColorHint="@color/background_text"
+                    android:background="#EEEEEE"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Signup Button -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/signupButton"
+                    android:layout_width="160dp"
+                    android:layout_height="42dp"
+                    android:text="Signup"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_button"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
